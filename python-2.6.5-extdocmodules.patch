@@ -1,0 +1,12 @@
+diff -up Python-2.6.5/Doc/Makefile.extdocmodules Python-2.6.5/Doc/Makefile
+--- Python-2.6.5/Doc/Makefile.extdocmodules	2010-03-13 08:42:13.000000000 -0500
++++ Python-2.6.5/Doc/Makefile	2010-07-12 08:07:28.073145207 -0400
+@@ -56,7 +56,7 @@ checkout:
+ 
+ update: clean checkout
+ 
+-build: checkout
++build:
+ 	mkdir -p build/$(BUILDER) build/doctrees
+ 	$(PYTHON) tools/sphinx-build.py $(ALLSPHINXOPTS)
+ 	@echo
